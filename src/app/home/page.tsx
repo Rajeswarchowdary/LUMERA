@@ -9,9 +9,9 @@ import About from "../about/page";
 const inter = Inter({ subsets: ["latin"] });
 
 const images = [
-    "/public/bg_1.jpg",
-    "/public/bg_2.jpg",
-    "/public/bg_3.jpg",
+    "/bg_1.jpg",
+    "/bg_2.jpg",
+    "/bg_3.jpg",
 ];
 
 const Home = () => {
