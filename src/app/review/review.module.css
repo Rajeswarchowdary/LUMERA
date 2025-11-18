@@ -1,0 +1,249 @@
+body {
+    background-color: #221518;
+}
+
+.heading {
+    font-size: 2.8rem;
+    color: #f8e4be;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.maindiv {
+    width: 80%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 14px;
+    background-color: #f7e1bcd6;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.leftimgdiv {
+    width: 45%;
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.reviewimg {
+    /* width: 100%; */
+    /* z-index: 2px; */
+    /* border-radius: 12px; */
+    margin-top: 80px;
+    height: 500px;
+}
+
+.rightformdiv {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formdiv {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.formdiv label {
+    font-size: 17px;
+    color: #6d4c41;
+}
+
+.formdiv input,
+.formdiv select,
+.textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #aa9179;
+    outline: none;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.85);
+    transition: 0.2s ease;
+}
+
+.formdiv input:focus,
+.formdiv select:focus,
+.textarea:focus {
+    border-color: #6d4c41;
+    box-shadow: 0px 0px 6px rgba(140, 98, 58, 0.5);
+}
+
+.row {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+}
+
+.inputGroup {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.textarea {
+    height: 80px;
+    resize: none;
+}
+
+.button {
+    background-color: #6d4c41;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+    width: 150px;
+    align-self: center;
+    margin-top: 5px;
+}
+
+.button:hover {
+    background-color: #8d6e63;
+    transform: scale(1.05);
+}
+
+.labelfont {
+    font-weight: 1000;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 480px) {
+    .maindiv {
+        /* width: 95%; */
+        /* min-height: 60vh;     */
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5px;
+        /* padding: 15px; */
+    }
+    .leftimgdiv {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .reviewimg {
+        height: 260px;
+        width: auto;
+        margin: 0;
+    }
+    .rightformdiv {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .formdiv {
+        width: 100%;
+        padding: 10px;
+        gap: 12px;
+    }
+    .formdiv .row {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .formdiv input,
+    .formdiv select,
+    .formdiv textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 6px;
+        border: 1px solid #aa9179;
+        background: rgba(255, 255, 255, 0.85);
+        font-size: 14px;
+    }
+    .formdiv textarea {
+        height: 90px;
+        resize: none;
+    }
+    .button {
+        width: 150px;
+        align-self: center;
+        margin-top: 10px;
+    }
+    .heading {
+        font-size: 2rem;
+        margin-bottom: 12px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    .maindiv {
+        width: 90%;
+        /* min-height: 65vh; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 20px;
+    }
+    .leftimgdiv {
+        width: 45%;
+        display: flex;
+        justify-content: center;
+    }
+    .reviewimg {
+        height: 350px;
+        width: auto;
+        border-radius: 12px;
+        margin-top: 10px;
+    }
+    .rightformdiv {
+        width: 50%;
+    }
+    .formdiv {
+        gap: 14px;
+    }
+    .formdiv .row {
+        display: flex;
+        flex-direction: row;
+        gap: 14px;
+    }
+    .inputGroup {
+        width: 100%;
+    }
+    .formdiv select,
+    .formdiv input,
+    .formdiv textarea {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1366px) {
+    .maindiv {
+        width: 75%;
+        /* min-height: 70vh; */
+        gap: 28px;
+        padding: 25px;
+    }
+    .reviewimg {
+        height: 420px;
+    }
+    .formdiv {
+        gap: 14px;
+    }
+    .formdiv .row {
+        flex-direction: row;
+    }
+}

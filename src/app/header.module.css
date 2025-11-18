@@ -1,0 +1,133 @@
+.header {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 1020px;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    height: 8vh;
+    padding: 0 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.nav a {
+    /* color: white; */
+    color: #f7e1bcd6 !important;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    .header {
+        justify-content: center;
+    }
+    .logo {
+        position: absolute;
+        left: 20px;
+    }
+    .nav {
+        gap: 18px;
+    }
+}
+
+.menuBtn {
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 0 20px;
+        /* justify-content: space-between; */
+        gap: 200px;
+    }
+    .nav {
+        display: none;
+    }
+    .menuBtn {
+        display: block;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+    .mobileNav {
+        display: flex;
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.88);
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 60%;
+        padding: 20px;
+        gap: 10px;
+        transform: translateX(100%);
+        transition: 0.4s ease;
+    }
+    .showNav {
+        transform: translateX(0);
+    }
+}
+
+.fullPageLoader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #221518;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+}
+
+.loaderContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.loaderText {
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+    max-width: 100%;
+    line-height: 1.4;
+}
+
+.logoFade {
+    animation: fadeScale 1.6s ease-in-out infinite;
+}
+
+@keyframes fadeScale {
+    0% {
+        opacity: 0.4;
+        transform: scale(0.9);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 0.4;
+        transform: scale(0.9);
+    }
+}

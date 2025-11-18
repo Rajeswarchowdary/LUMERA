@@ -1,0 +1,166 @@
+.maindiv {
+    width: 100%;
+}
+
+.heading h1 {
+    color: #6f4e37;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.heading p {
+    color: #8d7b68;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.headingTitle {
+    color: #f8e4be !important;
+    font-size: 3rem !important;
+    text-align: center;
+}
+
+.maindiv {
+    width: 100%;
+    /* padding: 30px 20px; */
+}
+
+.heading h1 {
+    color: #6f4e37;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.heading p {
+    color: #8d7b68;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.div {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.cointainer {
+    width: 300px;
+    height: 180px;
+    background-color: #f7e1bcd6;
+    border: 1px solid #e8dfd3;
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+.cointainer:hover {
+    transform: translateY(-5px);
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+    /* margin-bottom: 10px; */
+}
+
+.cointainer h4 {
+    color: #6f4e37;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.cointainer p {
+    color: #6d4c41;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.bottom {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.bottom p {
+    color: #8d7b68;
+    font-size: 18px;
+    /* margin-bottom: 10px; */
+}
+
+.bottom h3 {
+    color: #6f4e37;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.bottombutton {
+    background-color: #6d4c41;
+    color: white;
+    border: none;
+    padding: 12px 35px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-bottom: 5px;
+}
+
+.bottombutton:hover {
+    background-color: #8d6e63;
+    transform: scale(1.05);
+}
+
+.fullPageLoader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #221518;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+}
+
+.loaderContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.loaderText {
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+    max-width: 100%;
+    line-height: 1.4;
+}
+
+.logoFade {
+    animation: fadeScale 1.6s ease-in-out infinite;
+}
+
+@keyframes fadeScale {
+    0% {
+        opacity: 0.4;
+        transform: scale(0.9);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    100% {
+        opacity: 0.4;
+        transform: scale(0.9);
+    }
+}

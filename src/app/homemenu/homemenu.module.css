@@ -1,0 +1,214 @@
+body {
+    background-color: #221518;
+    /* background-color: #f8e4be5a; */
+}
+
+.maindiv {
+    width: 100%;
+    /* height: 30vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 50px 20px; */
+    font-family: "Poppins", sans-serif;
+}
+
+.heading {
+    font-size: 2.5rem;
+    /* color: #221518; */
+    color: #f8e4be;
+    /* margin-bottom: 40px;  */
+    /* text-transform: uppercase; */
+    /* border-bottom: 3px solid #c19a6b;     */
+    /* padding-bottom: 10px; */
+}
+
+.section {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin-bottom: 10px;  */
+}
+
+.tab {
+    background-color: #fff8f0;
+    color: #4e342e;
+    border: 2px solid #d7ccc8;
+    padding: 5px 15px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab:hover {
+    background-color: #6d4c41;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.active {
+    background-color: #6d4c41;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.itemsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 220px;
+    /* height: 350px; */
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.h3 {
+    color: red;
+    margin: -10px;
+    margin-bottom: 5px;
+}
+
+.price {
+    color: #6d4c41;
+    font-weight: bold;
+    margin-top: 5px;
+    display: flex;
+    padding-left: 10px;
+    justify-content: left;
+}
+
+.desc {
+    color: #5d4037bf;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.orderBtn {
+    margin-top: 10px;
+    background-color: #6d4c41;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.orderBtn:hover {
+    background-color: #8d6e63;
+    transform: scale(1.05);
+}
+
+.moreSection {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.moreBtn {
+    /* background-color: #6f4e37;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
+    background-color: #fff8f0;
+    color: #4e342e;
+    border: 2px solid #d7ccc8;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.moreBtn:hover {
+    background-color: #8b5e3c;
+    color: #f8e4be;
+    transform: scale(1.05);
+}
+
+.moreBtn:active {
+    transform: scale(0.98);
+}
+
+@media (max-width: 480px) {
+    .itemsContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+        width: 100%;
+        justify-items: center;
+    }
+    .card {
+        width: 150px;
+        padding: 8px;
+    }
+    .image {
+        height: 120px;
+    }
+    .h3 {
+        font-size: 1rem;
+    }
+    .price,
+    .desc {
+        font-size: 0.85rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    .itemsContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 22px;
+        width: 90%;
+        justify-items: center;
+        margin: auto;
+    }
+    .card {
+        width: 190px;
+    }
+    .image {
+        height: 150px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1366px) {
+    .itemsContainer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+        width: 80%;
+        justify-items: center;
+        margin: auto;
+    }
+    .card {
+        width: 210px;
+    }
+}
