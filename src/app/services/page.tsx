@@ -18,12 +18,13 @@ const Services = () => {
       </div>
 
       <div className={styles.maindiv}>
+
         <div className={styles.smalldiv}>
           <Image
             src="/coffecup.png"
-            alt="Coffee Cup"
             width={170}
             height={170}
+            alt="Coffee Cup"
             className={styles.image}
           />
           <p className={styles.imgtext}>Coffee</p>
@@ -32,9 +33,9 @@ const Services = () => {
         <div className={styles.smalldiv}>
           <Image
             src="/takeaway.png"
-            alt="Takeaway"
             width={170}
             height={170}
+            alt="Takeaway"
             className={styles.image}
           />
           <p className={styles.imgtext}>Takeaway</p>
@@ -43,9 +44,9 @@ const Services = () => {
         <div className={styles.smalldiv}>
           <Image
             src="/desserts_1.png"
-            alt="Desserts"
             width={170}
             height={170}
+            alt="Desserts"
             className={styles.image}
           />
           <p className={styles.imgtext}>Desserts</p>
@@ -54,9 +55,9 @@ const Services = () => {
         <div className={styles.smalldiv}>
           <Image
             src="/mocktails.png"
-            alt="Mocktails"
             width={170}
             height={170}
+            alt="Mocktails"
             className={styles.image}
           />
           <p className={styles.imgtext}>Mocktails</p>
@@ -65,9 +66,9 @@ const Services = () => {
         <div className={styles.smalldiv}>
           <Image
             src="/soups.png"
-            alt="Mocktails"
             width={170}
             height={170}
+            alt="Soups"
             className={styles.image}
           />
           <p className={styles.imgtext}>Soups</p>
@@ -76,14 +77,14 @@ const Services = () => {
         <div className={styles.smalldiv}>
           <Image
             src="/pizza.png"
-            alt="Mocktails"
             width={170}
             height={170}
+            alt="Quick Bites"
             className={styles.image}
           />
           <p className={styles.imgtext}>Quick Bites</p>
         </div>
-        
+
       </div>
     </section>
   );
